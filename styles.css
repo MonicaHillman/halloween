@@ -1,0 +1,121 @@
+:root {
+    --laranja: #FF9D2B;
+    --roxo-escuro: #201441;
+    --roxo-claro: #5636AC;
+    --laranja-claro: #FBC17C;
+    --laranja-escuro: #E7830E;
+    --fonte-titulo: 'Lilita One', sans-serif;
+    --fonte-principal: 'Inter', sans-serif;
+    --branco: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--laranja);
+    font-family: var(--fonte-principal);
+    padding: 2.75rem 4rem;
+}
+
+.banner {
+    background-color: var(--roxo-escuro);
+    display: flex;
+    border-radius: 31px;
+    height: 35vh;
+    justify-content: space-between;
+    padding: 3.25rem;
+}
+
+h1 {
+    color: var(--laranja);
+    font-family: var(--fonte-titulo);
+    font-size: 64px;
+    line-height: 73px;
+    padding-bottom: 2.25rem;
+}
+
+.banner button {
+    padding: .5rem 1rem;
+    border-radius: 116px;
+    background-color: var(--roxo-claro);
+    border: none;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--branco);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner__imagem {
+    width: 35%;
+    right: 10rem;
+    top: 0;
+    position: absolute;
+}
+
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    padding: 2.125rem 0;
+}
+
+ul {
+    list-style-type: none;
+    gap: 1rem;
+
+}
+
+.musica {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--laranja-escuro);
+    border-radius: 14px;
+    padding: 0.938rem 1.938rem;
+}
+
+.musica:not(:first-of-type) {
+    margin: 1.125rem 0;
+    background-color: var(--laranja-claro);
+}
+
+.musica__container,
+.musica__play {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.musica__container img {
+    width: 100px;
+    border-radius: 16px;
+}
+
+.play {
+    background-color: transparent;
+    border: 0 none;
+    cursor: pointer;
+}
+
+.informacoes h3 {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.informacoes p {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.minutagem {
+    font-size: 12px;
+    line-height: 15px;
+}
